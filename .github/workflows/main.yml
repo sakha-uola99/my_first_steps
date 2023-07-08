@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+
+int main() {
+    
+    string password;
+    string login;
+    string option;
+    int choice;
+    cout<< "---------------------------------------"<< endl;
+    cout<< "-           Enter the password:       -"<< endl;
+    cin>> password;
+    cout<< "---------------------------------------"<<endl;
+    cout<< "----------- Enter the login:  ---------"<<endl;
+    cin>> login;
+    cout<<"-                                      -"<<endl;
+    cout<< login<< endl;
+    
+    cout<<"-----------------------------------------"<<endl;
+    cout<<"-                                       -"<<endl;
+    
+    cout<<"#------------------------------#"<<endl;
+    cout<<"#                              #"<<endl;
+    cout<<"# enter an option for password #" <<endl;
+    cout<<"#------------------------------#"<<endl;
+               cin>> option;
+    if(option =="hidden"){
+        for(int i = 0; i < password.length();i++){
+            password.at(i) = '*';
+            
+        }
+        cout<<"🔒 password:"<< endl;
+        cout<<"*----------*"<<endl;
+        cout<< password<< endl;
+        cout<<"*----------*"<<endl;
+        cout<<"            "<<endl;
+        cout<<"------------"<<endl;
+        cout<<"login:"<<endl;
+        cout<<login<<endl;
+    }
+    
+    
+    
+    
+    return 0;
+}
